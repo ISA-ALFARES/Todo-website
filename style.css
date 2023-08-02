@@ -5,6 +5,7 @@
 }
 body{
   background-color: rgb(255, 255, 255);
+  
 }
 .navbar {
   display: flex;
@@ -55,7 +56,9 @@ h1{
   background-color: #ffffff; /* لون خلفية العنصر */
   padding: 10px 3px; /* تباعد داخلي للعنصر */
   border: 1px solid #ccc; /* حدود العنصر */
-  border-radius: 1px; /* نصف قطر الزوايا للعنصر (لتظهر الزوايا مدورة) */
+  border-radius: 3px; /* نصف قطر الزوايا للعنصر (لتظهر الزوايا مدورة) */
+  display: flex;
+  justify-content: space-between;
 }
 
 /* استهداف الفقرة داخل العنصر div */
@@ -63,4 +66,15 @@ h1{
   font-size: 18px; /* حجم الخط للنص داخل الفقرة */
   color: #333; /* لون النص داخل الفقرة */
   margin: 0; /* إزالة الهوامش الخارجية للفقرة لتقريبها من حواف العنصر */
+}
+
+.left-icon,.right-icon{
+  padding: 5px 10px;
+}
+.icons{
+  font-size: 22px;
+}
+.icons:hover{
+  font-size: 23px;
+  transition: 0.2s;
 }
