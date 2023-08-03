@@ -16,7 +16,7 @@ body{
   border-bottom: 1px solid #ccc; /* حدود العنصر */
   border-color: #63aeffbe; /* تغيير لون الحدود عند التركيز */
   box-shadow: 0px 1px 0px rgba(46, 147, 255, 0.11); /* ظل للعنصر عند التركيز */
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 
 .navbar-icon img {
@@ -26,10 +26,12 @@ body{
 
 h1{
   text-align: center;
+    margin-bottom: 30px;
+
 }
 .input {
   display: block;
-  width: 1000px;
+  width: 990px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 10px;
@@ -41,20 +43,23 @@ h1{
   background-color: #ffffff; /* لون خلفية العنصر */
 }
 
+
 /* لتغيير التنسيق عندما يكون العنصر في حالة التركيز (عندما يتم اختياره) */
 .input:focus {
   outline: none; /* لإزالة التأطير الافتراضي عندما يكون العنصر محددًا */
   border-color: #007bff; /* تغيير لون الحدود عند التركيز */
-  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* ظل للعنصر عند التركيز */
 }
-
+.input:hover{
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* ظل للعنصر عند التركيز */
+  transition: 0.5s;
+} 
 /* استهداف العنصر div بواسطة الفئة .task */
-.task {
+.task{
   width: 1000px;
   margin-left: auto;
   margin-right: auto;
   background-color: #ffffff; /* لون خلفية العنصر */
-  padding: 10px 3px; /* تباعد داخلي للعنصر */
+  padding: 3px 3px; /* تباعد داخلي للعنصر */
   border: 1px solid #ccc; /* حدود العنصر */
   border-radius: 3px; /* نصف قطر الزوايا للعنصر (لتظهر الزوايا مدورة) */
   display: flex;
@@ -63,6 +68,8 @@ h1{
 
 /* استهداف الفقرة داخل العنصر div */
 .task p {
+  display: flex;
+  align-items: center;
   font-size: 18px; /* حجم الخط للنص داخل الفقرة */
   color: #333; /* لون النص داخل الفقرة */
   margin: 0; /* إزالة الهوامش الخارجية للفقرة لتقريبها من حواف العنصر */
@@ -73,8 +80,45 @@ h1{
 }
 .icons{
   font-size: 22px;
+  opacity: 50%;
+}
+
+.icon-trash-o:hover{
+  color: rgba(255, 0, 0, 0.678);
+  transition: 0.3s;
+
+}
+.icon-edit:hover{
+  color: rgb(0, 117, 252);
+  transition: 0.3s;
+
 }
 .icons:hover{
-  font-size: 23px;
-  transition: 0.2s;
+  opacity: 1;
+  transition: 0.3s;
+}
+button{
+  all: unset;
+}
+/* توسيط الزر والحقل أفقيًا في المنتصف */
+.input1 {
+  display: flex;
+  align-items: center; /* توسيط العناصر بشكل رأسي */
+  justify-content: center; /* توسيط العناصر أفقيًا في المنتصف */
+}
+
+/* تحديد هامش للحقل من الجهتين اليمنى واليسرى لترك مساحة بين الحقل والزر */
+.input1 input {
+  margin: 40px -3px; /* يمكنك تعديل القيمة حسب الحاجة */
+}
+.icon-plus{
+  padding: 10px;
+  opacity: 1;
+font-size: 12px;
+  color: #f1f1f1;
+  background-color: #007bff;
+}
+.icon-plus:hover{
+  background-color: #025cbd;
+  transition: 0.3s;
 }
