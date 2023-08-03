@@ -64,6 +64,7 @@ h1{
   border-radius: 3px; /* نصف قطر الزوايا للعنصر (لتظهر الزوايا مدورة) */
   display: flex;
   justify-content: space-between;
+  margin-bottom: 5px;
 }
 
 /* استهداف الفقرة داخل العنصر div */
@@ -81,6 +82,7 @@ h1{
 .icons{
   font-size: 22px;
   opacity: 50%;
+  cursor: pointer;
 }
 
 .icon-trash-o:hover{
