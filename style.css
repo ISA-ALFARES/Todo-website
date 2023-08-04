@@ -4,7 +4,7 @@
   padding: 0px;
 }
 body{
-  background-color: rgb(255, 255, 255);
+	background: linear-gradient(90deg, #a3a3a3, #c5c5c5be, #a3a3a3);
   
 }
 .navbar {
@@ -95,6 +95,12 @@ h1{
   transition: 0.3s;
 
 }
+.icon-checkbox-checked {
+
+  color: #007bff;
+  opacity: 1;
+}
+
 .icons:hover{
   opacity: 1;
   transition: 0.3s;
@@ -123,4 +129,11 @@ font-size: 12px;
 .icon-plus:hover{
   background-color: #025cbd;
   transition: 0.3s;
+}
+.display{
+  display: none;
+}
+
+.finish{
+  text-decoration-line: line-through;
 }

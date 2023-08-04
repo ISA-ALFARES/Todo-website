@@ -1,14 +1,24 @@
 const form = document.querySelector("form");
 const container = document.getElementById("container");
 const input = document.querySelector("input");
-container.addEventListener("click" ,(eo) => {
+ container.addEventListener("click" ,(eo) => {
+
   if(eo.target.className == "icon-trash-o icons"){
 
     eo.target.parentElement.parentElement.remove()
 
-  }else{
-
   }
+   else if(eo.target.className == "icon-checkbox-unchecked icons"){
+
+    eo.target.classList.add("display")
+    const checked = `<span class="icon-checkbox-checked icons"></span>`
+
+    // eo.target.parentElement.parentElement.getElementByClassName("task-text")[0].classList.add("finish");
+
+    eo.target.parentElement.innerHTML += checked;
+
+  }else{}
+  
 })
 form.addEventListener("submit" ,(eo) => {
 
@@ -19,7 +29,7 @@ form.addEventListener("submit" ,(eo) => {
         <span class="icon-th-large icons"></span>
         <span class="icon-checkbox-unchecked icons"></span>
       </div>
-        <p>${input.value}</p>
+        <p class="task-text">${input.value}</p>
       <div class="right-icon">
         <span class="icon-trash-o icons"></span>
         <span class="icon-edit icons"></span>
