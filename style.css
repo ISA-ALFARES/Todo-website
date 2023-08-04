@@ -84,7 +84,13 @@ h1{
   opacity: 50%;
   cursor: pointer;
 }
-
+.icon-star{
+  color: #6e6e6e;
+}
+.icon-star:hover{
+  color: rgba(255, 166, 0, 0.671);
+  opacity: 1;
+}
 .icon-trash-o:hover{
   color: rgba(255, 0, 0, 0.678);
   transition: 0.3s;
@@ -136,4 +142,13 @@ font-size: 12px;
 
 .finish{
   text-decoration-line: line-through;
+}
+.orange{
+  color: orange;
+  opacity: 1;
+}
+.save{
+  content: "sad";
+  font-size: 10px;
+  padding: auto;
 }

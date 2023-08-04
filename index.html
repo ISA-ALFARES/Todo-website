@@ -24,15 +24,15 @@
     <!-- Main content -->
     <form >
       <div class="input1">
-        <input class="input" type="text" placeholder="Add new Task...">
-        <button><span class="icon-plus icons"></span></button>
+        <input class="input" type="text" id="new-task" placeholder="Add new Task...">
+        <button class="crate-task" onclick=" addTask()"><span class="icon-plus icons"></span></button>
       </div>
 
     </form>
     <div id="container">
-      <div class="task" id="task">
+      <div  class="task" id="task">
         <div class="left-icon">
-          <span class="icon-th-large icons"></span>
+          <span class="icon-star icons"></span>
           <span class="icon-checkbox-unchecked icons"></span>
         </div>
           <p class="task-text">Task</p>
@@ -42,5 +42,6 @@
         </div>
       </div>
     </div>
-</body>
+
+  </body>
 </html>
