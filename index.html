@@ -1,47 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>todo</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="/icomoon/style.css">
-  <script defer src="main.js"></script>
-
-  <title>todo</title>
 </head>
-<body>
-    <!-- Navbar -->
-    <nav class="navbar">
-      <div class="navbar-icon">
-        <!-- Replace the following line with your icon image or icon font -->
-        <img src="#" alt="Icon">
-      </div>
-      <div class="navbar-title">
-          blablabla
-      </div>
-    </nav>
-    <h1>Task List 2023</h1>
-    <!-- Main content -->
-    <form >
-      <div class="input1">
-        <input class="input" type="text" id="new-task" placeholder="Add new Task...">
-        <button class="crate-task" onclick=" addTask()"><span class="icon-plus icons"></span></button>
-      </div>
 
-    </form>
-    <div id="container">
-      <div  class="task" id="task">
-        <div class="left-icon">
-          <span class="icon-star icons"></span>
-          <span class="icon-checkbox-unchecked icons"></span>
-        </div>
-          <p class="task-text">Task</p>
-        <div class="right-icon">
-          <span class="icon-trash-o icons"></span>
-          <span class="icon-edit icons"></span>
-        </div>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar-icon">
+      <!-- Replace the following line with your icon image or icon font -->
+      <h2>Todo</h2>
+    </div>
+    <div class="navbar-title">
+      <div class="icon" id="dayNightIcon" onclick="toggleDayNight()">
+        <div class="icon-moon-o  moon"></div>
+        <div class="icon-sun sun"></div>
+    </div>
+    </div>
+  </nav>
+  <div class="container mt-5" id="container">
+    <h1 class="text-center mb-4">Task List 2023</h1>
+    <div class="input-group mb-3">
+      <input type="text" class="form-control" id="taskInput" placeholder="Add new Task...">
+      <div class="input-group-append">
+        <button class="btn btn-primary" onclick="addTask()"><i class="fas fa-plus"></i></button>
       </div>
     </div>
+    <div class="cont"  id="cont">
+      <ul class="list-group" id="taskList">
+      </ul>
+    </div>
+  </div>
 
-  </body>
+  <script src="script.js"></script>
+</body>
+
 </html>
